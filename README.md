@@ -1,4 +1,4 @@
-# MeinCRM - Customer Relationship Management System
+# VertriebsCRM 2 - Customer Relationship Management System
 
 Ein vollständiges CRM-System für kleine und mittelständische Unternehmen, entwickelt mit PHP und MySQL.
 
@@ -69,9 +69,9 @@ Die Datenbankverbindung ist bereits in `db_verbindung.php` konfiguriert:
 
 ```php
 $host = 'localhost';      // MySQL Server
-$db   = 'vertriebs_crm'; // Datenbankname
-$user = 'root';           // MySQL Benutzername
-$pass = '';               // MySQL Passwort (bei XAMPP standardmäßig leer)
+$db   = 'vertriebscrm2';  // Datenbankname
+$user = 'root';            // MySQL Benutzername
+$pass = '';                // MySQL Passwort (bei XAMPP standardmäßig leer)
 ```
 
 **Wichtig**: Für Produktionsumgebungen ändern Sie diese Zugangsdaten!
@@ -172,7 +172,7 @@ date_default_timezone_set('Europe/Berlin');
 
 6. **Regelmäßige Backups**
    ```bash
-   mysqldump -u root -p vertriebs_crm > backup_$(date +%Y%m%d).sql
+   mysqldump -u root -p vertriebscrm2 > backup_$(date +%Y%m%d).sql
    ```
 
 ## Verwendung
@@ -241,22 +241,22 @@ session.save_path = "/tmp"
 
 ```bash
 # Komplettes Backup
-mysqldump -u root -p vertriebs_crm > crm_backup.sql
+mysqldump -u root -p vertriebscrm2 > crm_backup.sql
 
 # Mit Zeitstempel
-mysqldump -u root -p vertriebs_crm > crm_backup_$(date +%Y%m%d_%H%M%S).sql
+mysqldump -u root -p vertriebscrm2 > crm_backup_$(date +%Y%m%d_%H%M%S).sql
 
 # Nur Struktur
-mysqldump -u root -p --no-data vertriebs_crm > crm_structure.sql
+mysqldump -u root -p --no-data vertriebscrm2 > crm_structure.sql
 
 # Nur Daten
-mysqldump -u root -p --no-create-info vertriebs_crm > crm_data.sql
+mysqldump -u root -p --no-create-info vertriebscrm2 > crm_data.sql
 ```
 
 ### Backup wiederherstellen
 
 ```bash
-mysql -u root -p vertriebs_crm < crm_backup.sql
+mysql -u root -p vertriebscrm2 < crm_backup.sql
 ```
 
 ## Lizenz
@@ -272,16 +272,17 @@ Bei Fragen oder Problemen:
 
 ## Version
 
-- **Version**: 1.0
+- **Version**: 2.0
 - **Letztes Update**: 2025-11-05
 - **Entwickelt für**: PHP 7.4+, MySQL 5.7+
 
 ## Changelog
 
-### Version 1.0 (2025-11-05)
-- Initiale Version
+### Version 2.0 (2025-11-05)
+- Umbenennung zu VertriebsCRM 2
+- Datenbank: vertriebscrm2
+- Vollständige Datenbankstruktur
 - Firmen-, Projekt- und Aktivitätenverwaltung
 - Benutzerverwaltung mit Rollen
 - Dashboard mit KPIs
 - CSV Import/Export
-- Vollständige Datenbankstruktur

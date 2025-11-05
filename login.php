@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MeinCRM</title>
+    <title>Login - VertriebsCRM 2</title>
     <link rel="stylesheet" href="style.css?v=7.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -204,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
-                <h1><i class="fas fa-user-circle"></i> MeinCRM</h1>
+                <h1><i class="fas fa-user-circle"></i> VertriebsCRM 2</h1>
                 <p>Melden Sie sich an, um fortzufahren</p>
             </div>
             

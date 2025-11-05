@@ -1,13 +1,13 @@
 -- ===================================================================
 -- CRM DATENBANK - VOLLSTÄNDIGE STRUKTUR
--- Datenbank: vertriebs_crm
--- Version: 1.0
--- Erstellt für: MeinCRM - Customer Relationship Management System
+-- Datenbank: vertriebscrm2
+-- Version: 2.0
+-- Erstellt für: VertriebsCRM 2 - Customer Relationship Management System
 -- ===================================================================
 
 -- Datenbank erstellen (falls nicht vorhanden)
-CREATE DATABASE IF NOT EXISTS vertriebs_crm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE vertriebs_crm;
+CREATE DATABASE IF NOT EXISTS vertriebscrm2 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE vertriebscrm2;
 
 -- ===================================================================
 -- TABELLE: Rollen
@@ -285,7 +285,7 @@ GROUP BY p.Projekt_ID;
 
 -- Zusammenfassung anzeigen
 SELECT
-    'Datenbank erfolgreich erstellt!' as Status,
+    'VertriebsCRM 2 - Datenbank erfolgreich erstellt!' as Status,
     (SELECT COUNT(*) FROM Rollen) as Anzahl_Rollen,
     (SELECT COUNT(*) FROM Benutzer) as Anzahl_Benutzer,
     (SELECT COUNT(*) FROM Firmen) as Anzahl_Firmen,
