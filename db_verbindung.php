@@ -5,7 +5,7 @@
 
 // --- Konfiguration der Zugangsdaten ---
 $host = 'localhost';      // Der Server, auf dem die Datenbank läuft (bei XAMPP immer 'localhost')
-$db   = 'vertriebs_crm'; // Der Name der Datenbank, den wir in phpMyAdmin vergeben haben
+$db   = 'vertriebscrm2';  // Der Name der Datenbank (VertriebsCRM 2)
 $user = 'root';           // Der Standard-Benutzername für die Datenbank in XAMPP
 $pass = '';               // Das Standard-Passwort für XAMPP ist leer
 $charset = 'utf8mb4';     // Stellt sicher, dass Umlaute (ä, ö, ü) und Sonderzeichen korrekt behandelt werden
